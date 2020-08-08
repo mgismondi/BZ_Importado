@@ -22,7 +22,7 @@ namespace CLI
       //  ASIGNACION
       //
       
-      app.Archivo = "d:\\libros.csv";
+      app.Archivo = @"d:\libros.csv";
       try
       {
         app.Run();

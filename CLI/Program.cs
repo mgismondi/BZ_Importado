@@ -26,7 +26,7 @@ namespace CLI
                 Console.WriteLine("Adios");
                 Environment.Exit(-1);
             }
-      app.Archivo = $"{args[0]}";
+      app.Archivo = @$"{args[0]}";
       try
       {
         app.Run();

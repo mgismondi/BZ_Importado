@@ -22,7 +22,11 @@ namespace CLI
       //  ASIGNACION
       //
       
-      app.Archivo = "d:\\libros.csv";
+      if(args.Length != 1){
+                Console.WriteLine("Adios");
+                Environment.Exit(-1);
+            }
+      app.Archivo = $"{args[0]}";
       try
       {
         app.Run();
